@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/NehGuk/bid1/issues"
   },
-  "homepage": "https://github.com/NehGuk/bid1#readme"
+  "homepage": "https://github.com/NehGuk/bid1#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
 }
