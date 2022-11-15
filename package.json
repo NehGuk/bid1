@@ -1,0 +1,25 @@
+{
+  "name": "BID1",
+  "version": "1.0.0",
+  "description": "BID1 Auction | Semester Project 2 | Noroff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NehGuk/bid1.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "bootstrap"
+  ],
+  "author": "Henri Kugler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NehGuk/bid1/issues"
+  },
+  "homepage": "https://github.com/NehGuk/bid1#readme"
+}
