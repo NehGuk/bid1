@@ -1,2 +1,6 @@
-# bid1
- Noroff | Semester Project 2
+# BID1
+
+Semester Project 2 | Noroff
+
+
+
