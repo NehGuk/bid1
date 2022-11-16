@@ -1,0 +1,19 @@
+/* BREAKPOINTS */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 574px,
+  md: 766px,
+  lg: 990px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+/* SPACERS */
+
+$spacer: 1.2rem ;
+
+/* PROFILE IMAGE */
+
+.text-center .rounded-circle {
+    object-fit: cover;
+}
