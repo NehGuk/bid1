@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="/login.html">Login</a>
+                  <a class="nav-link" href="#">Login</a>
                 </li>
               </ul>
               <span class="navbar-text ms-4">
@@ -35,14 +35,52 @@
 
     <!-- HEADER -->
     <section class="container-fluid text-center px-5 mb-5">
-        <img class="text-center max-width-80% m-1" style="max-width: 60%; height: auto" src="/assets/logo-large.png">
+        <img class="text-center max-width-80% m-1" style="max-width: 30%; height: auto" src="/assets/logo-large.png">
         <h1 class="text-info">The best online auction experience!</h1>
     </section>
 
-    <!-- FORM -->
-    <p class="text-center">Login form</p>
+    <!-- SIGN UP FORM -->
+    <section>
+    <div class="container px-4 py-1 col-lg-4 col-sm-12 text-center">
+      <h1 class="text-center mt-4 mb-4">Login</h1>
+      <div class="form-signin">
+        <form action="/signup-thank-you.html" id="signupform">
+            
+            <!-- email -->
+            <div class="form-floating">
+            <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com" maxlength="100" pattern="^[\w\-.]+@(stud.)?noroff.no$" title="Please enter a valid stud.noroff.no or noroff.no email address" required>
+            <label for="email">Email</label>
+            </div>
+            <!-- password -->
+            <div class="form-floating">
+            <input type="password" name="password" id="password" class="form-control my-3" placeholder="Password" maxlength="20" minlength="8" pattern="^.(?=.{7,})(?=.[a-zA-Z]).*$" title="Password must be between 8 and 20 characters long" required>
+            <label class="was-validated" for="password">Password</label>
+            </div>
+            <!-- signup button -->
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+            <br>
+            <br>
+            <!-- Already registered error message -->
+            <div class="checkbox mb-3 register-error-message">
+              <label>
+                  <p href="/login.html">Invalid email or password. Try again!</p>
+              </label>
+            </div>
+            <!-- Click here to login -->
+            <div class="checkbox mb-3 login-link">
+              <label>
+                  <a href="/signup.html">Not signed up yet? Register now!</a>
+              </label>
+            </div>
+        </form>
+      </div>
+    </div>
+      
 
-    <!-- MAIN CONTENT -->
+    </section>
+    
+
+    
     
 
     <!-- FOOTER -->
