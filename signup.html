@@ -35,14 +35,56 @@
 
     <!-- HEADER -->
     <section class="container-fluid text-center px-5 mb-5">
-        <img class="text-center max-width-80% m-1" style="max-width: 60%; height: auto" src="/assets/logo-large.png">
+        <img class="text-center max-width-80% m-1" style="max-width: 30%; height: auto" src="/assets/logo-large.png">
         <h1 class="text-info">The best online auction experience!</h1>
     </section>
 
-    <!-- FORM -->
-    <p class="text-center">Sign up form</p>
+    <!-- SIGN UP FORM -->
+    <section>
+    <div class="container px-4 py-1 col-lg-4 col-sm-12 text-center">
+      <h1 class="text-center mt-4 mb-4">Signup</h1>
+      <div class="form-signin">
+        <form action="/signup-thank-you.html" id="signupform">
+            <!-- name -->
+            <div class="form-floating mb-4">
+            <input type="text" name="name" id="username" class="form-control" placeholder="Ola Nordmann" maxlength="100" pattern="^[\w]+$" title="User name must not contain punctuation symbols apart from underscore" required>
+            <label for="name">Username</label>
+            </div>
+            <!-- email -->
+            <div class="form-floating">
+            <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com" maxlength="100" pattern="^[\w\-.]+@(stud.)?noroff.no$" title="Please enter a valid stud.noroff.no or noroff.no email address" required>
+            <label for="email">Email</label>
+            </div>
+            <!-- password -->
+            <div class="form-floating">
+            <input type="password" name="password" id="password" class="form-control my-3" placeholder="Password" maxlength="20" minlength="8" pattern="^.(?=.{7,})(?=.[a-zA-Z]).*$" title="Password must be between 8 and 20 characters long" required>
+            <label class="was-validated" for="password">Password</label>
+            </div>
+            <!-- signup button -->
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+            <br>
+            <br>
+            <!-- Already registered error message -->
+            <div class="checkbox mb-3 register-error-message">
+              <label>
+                  <p href="/login.html">Email address already registered.</p>
+              </label>
+            </div>
+            <!-- Click here to login -->
+            <div class="checkbox mb-3 login-link">
+              <label>
+                  <a href="/login.html">Click here to login!</a>
+              </label>
+            </div>
+        </form>
+      </div>
+    </div>
+      
 
-    <!-- MAIN CONTENT -->
+    </section>
+    
+
+    
     
 
     <!-- FOOTER -->
