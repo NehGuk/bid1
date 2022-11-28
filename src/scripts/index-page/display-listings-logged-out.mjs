@@ -3,6 +3,15 @@ export function displayListingsLoggedOut(allListings) {
   listingsContainer.innerHTML = ``;
 
   for (let i = 0; i < allListings.length; i++) {
+    if (!allListings[i].media) {
+      allListings[i].media = "/assets/sample-image.png";
+    }
+
+    if (!allListings[i].description) {
+      allListings[i].description =
+        "Check out this item and place your bid before you regret it!";
+    }
+
     listingsContainer.innerHTML += `
         <div class="col">
               <div class="card h-100">
