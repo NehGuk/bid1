@@ -3,8 +3,8 @@ export function displayListingsLoggedOut(allListings) {
   listingsContainer.innerHTML = ``;
 
   for (let i = 0; i < allListings.length; i++) {
-    if (!allListings[i].media) {
-      allListings[i].media = "/assets/sample-image.png";
+    if (allListings[i].media.length === 0) {
+      allListings[i].media = ["/assets/sample-image.png"];
     }
 
     if (!allListings[i].description) {
