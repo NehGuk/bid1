@@ -12,6 +12,14 @@ export function displayListingsLoggedOut(allListings) {
         "Check out this item and place your bid before you regret it!";
     }
 
+    const formattedDate = new Date(allListings[i].endsAt).toLocaleDateString(
+      "en-us",
+      { month: "short", day: "numeric" }
+    );
+    const formattedTime = new Date(allListings[i].endsAt).toLocaleTimeString(
+      "en-GB"
+    );
+
     listingsContainer.innerHTML += `
         <div class="col">
               <div class="card h-100">
@@ -20,8 +28,7 @@ export function displayListingsLoggedOut(allListings) {
                   <h3 class="card-title">${allListings[i].title}</h3>
                   <p class="card-text">${allListings[i].description}</p>
                   <p><strong>Bids: </strong>${allListings[i].bids.length}</p>
-                  <p><strong>Ends at: </strong>${allListings[i].endsAt}</p>
-                  
+                  <p><strong>Ends at: </strong>${formattedDate}, ${formattedTime}</p>
                 </div>
                 <div class="card-footer bg-light border-0 pt-0 mt-0">
                   <a href="/signup.html"><button class="btn btn-primary px-4">Bid now</button></a>
