@@ -9,3 +9,6 @@ export const registerUserURL = `${API_BASE_URL}/auction/auth/register`;
 
 // Login user
 export const loginUserURL = `${API_BASE_URL}/auction/auth/login`;
+
+// Change user avatar
+export const sendNewAvatarURL = `${API_BASE_URL}/auction/profiles/`; // plus {name}/media
