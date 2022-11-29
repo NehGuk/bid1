@@ -1,4 +1,4 @@
-console.log("Access script right");
+localStorage.clear();
 import { loginAuthUser } from "./login-api-call.mjs";
 import { loginUserURL } from "../api/api-base-urls.mjs";
 

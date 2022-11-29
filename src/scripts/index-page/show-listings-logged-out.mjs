@@ -1,3 +1,4 @@
+localStorage.clear();
 import { allListingsLoggedOutURL } from "../api/api-base-urls.mjs";
 import { displayListingsLoggedOut } from "./display-listings-logged-out.mjs";
 

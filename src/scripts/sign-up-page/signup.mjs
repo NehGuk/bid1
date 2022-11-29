@@ -8,6 +8,7 @@ errorMessage.style.display = "none";
 
 signUpForm.addEventListener("submit", (event) => {
   event.preventDefault();
+
   // Create object from form input fields
   const myFormData = new FormData(event.target);
   const newUserObject = Object.fromEntries(myFormData.entries());
