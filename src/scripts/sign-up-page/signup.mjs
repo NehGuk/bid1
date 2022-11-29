@@ -1,5 +1,5 @@
 localStorage.clear();
-import { registerNewUser } from "./register-user.mjs";
+import { registerNewUser } from "./signup-api-call.mjs";
 import { registerUserURL } from "../api/api-base-urls.mjs";
 
 const signUpForm = document.querySelector("#signupform");

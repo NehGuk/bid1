@@ -6,4 +6,11 @@ export const fetchMetdhods = {
     },
     body: "",
   },
+  loginUser: {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: "",
+  },
 };
