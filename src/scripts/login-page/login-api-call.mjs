@@ -20,6 +20,7 @@ export async function loginAuthUser(url, userCredentials) {
     localStorage.setItem("email", json.email);
     localStorage.setItem("credits", json.credits);
     localStorage.setItem("avatar", json.avatar);
+    localStorage.setItem("token", json.accessToken);
 
     // Directs user to account page
     location.href = "/my-account.html";
