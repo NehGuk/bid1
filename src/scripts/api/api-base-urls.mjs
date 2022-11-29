@@ -6,3 +6,6 @@ export const allListingsLoggedOutURL = `${API_BASE_URL}/auction/listings?_seller
 
 // Register user
 export const registerUserURL = `${API_BASE_URL}/auction/auth/register`;
+
+// Login user
+export const loginUserURL = `${API_BASE_URL}/auction/auth/login`;
