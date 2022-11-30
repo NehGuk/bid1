@@ -1,7 +1,7 @@
-import { setNewAvatar } from "./change-avatar-api-call.mjs";
-import { sendNewAvatarURL } from "../api/api-base-urls.mjs";
 const userName = localStorage.getItem("name");
-const sendNewAvatarURLUpdated = `${sendNewAvatarURL}${userName}/media`;
+import { setNewAvatar } from "./change-avatar-api-call.mjs";
+import { sendAvatarURL } from "../api/api-base-urls.mjs";
+sendAvatarURL(userName);
 
 const changeAvatarForm = document.querySelector("#form-change-avatar");
 const avatarUrlInput = document.querySelector("#avatar-media");
@@ -21,5 +21,5 @@ changeAvatarButton.addEventListener("click", (showAvatarInput) => {
 changeAvatarForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const avatarObject = { avatar: avatarUrlInput.value };
-  setNewAvatar(sendNewAvatarURLUpdated, avatarObject);
+  setNewAvatar(sendAvatarURL(userName), avatarObject);
 });
