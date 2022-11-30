@@ -28,3 +28,10 @@ function showUserInfo() {
 `;
 }
 showUserInfo();
+
+function redirectsIfLoggedOut() {
+  if (!userName) {
+    location.href = "/index.html";
+  }
+}
+redirectsIfLoggedOut();
