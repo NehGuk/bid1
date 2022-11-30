@@ -1,3 +1,4 @@
+const token = localStorage.getItem("token");
 export const fetchMetdhods = {
   registerUser: {
     method: "POST",
@@ -10,6 +11,14 @@ export const fetchMetdhods = {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+    },
+    body: "",
+  },
+  updateAvatarOption: {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
     },
     body: "",
   },
