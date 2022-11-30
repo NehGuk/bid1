@@ -14,3 +14,8 @@ export const loginUserURL = `${API_BASE_URL}/auction/auth/login`;
 export function sendAvatarURL(name) {
   return `${API_BASE_URL}/auction/profiles/${name}/media`;
 }
+
+// Profile
+export function getProfileURL(name) {
+  return `${API_BASE_URL}/auction/profiles/${name}?_listings=true`;
+}

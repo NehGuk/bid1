@@ -22,4 +22,11 @@ export const fetchMetdhods = {
     },
     body: "",
   },
+  getProfile: {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+  },
 };
