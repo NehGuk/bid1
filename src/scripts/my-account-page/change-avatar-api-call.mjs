@@ -5,5 +5,6 @@ export async function setNewAvatar(url, avatarObject) {
   updateAvatarOption.body = JSON.stringify(avatarObject);
   const response = await fetch(url, updateAvatarOption);
   const json = await response.json();
+  localStorage.setItem("avatar", json.avatar);
   location.href = "/my-account.html";
 }
