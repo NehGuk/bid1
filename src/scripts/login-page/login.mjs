@@ -1,4 +1,6 @@
-localStorage.clear();
+import { clearLocalStorage } from "../clear-local-storage.mjs";
+clearLocalStorage();
+
 import { loginAuthUser } from "./login-api-call.mjs";
 import { loginUserURL } from "../api/api-base-urls.mjs";
 

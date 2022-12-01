@@ -1,4 +1,6 @@
-localStorage.clear();
+import { clearLocalStorage } from "../clear-local-storage.mjs";
+clearLocalStorage();
+
 import { registerNewUser } from "./signup-api-call.mjs";
 import { registerUserURL } from "../api/api-base-urls.mjs";
 
