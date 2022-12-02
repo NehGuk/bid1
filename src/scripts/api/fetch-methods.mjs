@@ -29,4 +29,11 @@ export const fetchMetdhods = {
       Authorization: `Bearer ${token}`,
     },
   },
+  getListing: {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+  },
 };

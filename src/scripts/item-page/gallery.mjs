@@ -1,25 +1,14 @@
-const productGallery = document.querySelector("#product-gallery");
-const imageCover = document.querySelector("#image-cover");
-
-const imageThumb1 = document.querySelector("#image-thumb-1");
-const imageThumb2 = document.querySelector("#image-thumb-2");
-const imageThumb3 = document.querySelector("#image-thumb-3");
-
-
-imageThumb1.addEventListener("click", () => {
-    imageCover.src = `
-        /assets/sample-image.png
+export function createGallery(listingData) {
+  for (let i = 0; i < listingData.media.length; i++) {
+    const buttonContainer = document.querySelector("#slider-buttons-container");
+    const imageContainer = document.querySelector("#image-container");
+    buttonContainer.innerHTML += `
+        <button type="button" data-bs-target="#gallery-container" data-bs-slide-to="${i}" class="active"></button>
     `;
-});
-
-imageThumb2.addEventListener("click", () => {
-    imageCover.src = `
-        /assets/sample-image-green.png
+    imageContainer.innerHTML += `
+        <div class="carousel-item active">
+            <img src="${listingData.media[i]}" alt="Los Angeles" class="d-block" style="width: 100%; height: 50vh; object-fit: cover;"/>
+        </div>
     `;
-});
-
-imageThumb3.addEventListener("click", () => {
-    imageCover.src = `
-        /assets/sample-image-blue.png
-    `;
-});
+  }
+}

@@ -1,7 +1,7 @@
 // BASE URL
 export const API_BASE_URL = `https://api.noroff.dev/api/v1`;
 
-// GET ALL LISTINGS LOGGED OUT
+// Get all listings (logged out)
 export const allListingsLoggedOutURL = `${API_BASE_URL}/auction/listings?_seller=true&_bids=true`;
 
 // Register user
@@ -18,4 +18,9 @@ export function sendAvatarURL(name) {
 // Profile
 export function getProfileURL(name) {
   return `${API_BASE_URL}/auction/profiles/${name}?_listings=true`;
+}
+
+// Single listing
+export function getListingURL(listingID) {
+  return `${API_BASE_URL}/auction/listings/${listingID}?_seller=true&_bids=true`;
 }
