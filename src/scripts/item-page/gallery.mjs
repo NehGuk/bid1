@@ -7,7 +7,7 @@ export function createGallery(listingData) {
     `;
     imageContainer.innerHTML += `
         <div class="carousel-item active">
-            <img src="${listingData.media[i]}" alt="Los Angeles" class="d-block" style="width: 100%; height: 50vh; object-fit: cover;"/>
+            <img src="${listingData.media[i]}" alt="Image of ${listingData.title}" class="d-block" style="width: 100%; height: 50vh; object-fit: cover;"/>
         </div>
     `;
   }
