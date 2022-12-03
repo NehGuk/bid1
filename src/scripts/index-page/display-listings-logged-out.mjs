@@ -27,11 +27,12 @@ export function displayListingsLoggedOut(allListings) {
                 <div class="card-body">
                   <h3 class="card-title pb-0">${allListings[i].title}</h3>
                   <p class="card-text">${allListings[i].description}</p>
-                  <hr>
-                  <p class="mb-0"><strong>Bids: </strong>${allListings[i].bids.length}</p>
-                  <p class="mb-0"><strong>Ends at: </strong>${formattedDate}, ${formattedTime}</p>
+                  
                 </div>
                 <div class="card-footer bg-light border-0 pt-0 mt-0">
+                <hr>
+                  <p class="mb-0"><strong>Bids: </strong>${allListings[i].bids.length}</p>
+                  <p class="mb-3"><strong>Ends at: </strong>${formattedDate}, ${formattedTime}</p>
                   <a href="/signup.html"><button class="btn btn-primary px-4">Bid now</button></a>
                   </div>
               </div>
