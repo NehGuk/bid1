@@ -1,8 +1,14 @@
 // BASE URL
 export const API_BASE_URL = `https://api.noroff.dev/api/v1`;
 
-// Get all listings (logged out)
+// Get all listings
 export const allListingsLoggedOutURL = `${API_BASE_URL}/auction/listings?_seller=true&_bids=true`;
+
+// Get all listings DESC
+export const allListingsDESC = `${API_BASE_URL}/auction/listings?_seller=true&_bids=true&sort=created&sortOrder=desc`;
+
+// Get all listings ASC
+export const allListingsASC = `${API_BASE_URL}/auction/listings?_seller=true&_bids=true&sort=created&sortOrder=asc`;
 
 // Register user
 export const registerUserURL = `${API_BASE_URL}/auction/auth/register`;
