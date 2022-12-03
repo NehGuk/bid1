@@ -17,7 +17,8 @@ export function displayListingsHome(allListings) {
       { month: "short", day: "numeric" }
     );
     const formattedTime = new Date(allListings[i].endsAt).toLocaleTimeString(
-      "en-GB"
+      "en-GB",
+      { hour: "2-digit", minute: "2-digit" }
     );
 
     listingsContainer.innerHTML += `
@@ -32,7 +33,7 @@ export function displayListingsHome(allListings) {
                 <div class="card-footer bg-light border-0 pt-0 mt-0">
                 <hr>
                   <p class="mb-0"><strong>Bids: </strong>${allListings[i].bids.length}</p>
-                  <p class="mb-3"><strong>Ends at: </strong>${formattedDate}, ${formattedTime}</p>
+                  <p class="mb-3"><strong>Ends at: </strong>${formattedDate}, <span class="small">${formattedTime}</span></p>
                   <a href="/item.html?id=${allListings[i].id}"><button class="btn btn-primary px-4">Bid now</button></a>
                   </div>
               </div>

@@ -5,7 +5,8 @@ export function displayBids(itemInfo) {
       { month: "short", day: "numeric" }
     );
     const formattedTime = new Date(itemInfo[i].created).toLocaleTimeString(
-      "en-GB"
+      "en-GB",
+      { hour: "2-digit", minute: "2-digit" }
     );
 
     const bidsContainer = document.querySelector("#bids-container");
@@ -16,7 +17,7 @@ export function displayBids(itemInfo) {
                 <p class="mb-1 bg-dark rounded p-3"><strong>${itemInfo[i].amount}</strong></p>
             </div>
             <div class="col text-start">
-                <p class="mb-0 small"><strong>From: </strong>${itemInfo[i].bidderName}</p>
+                <p class="mb-0"><strong>${itemInfo[i].bidderName}</strong></p>
                 <p class="mb-0 small"><strong>Date: </strong>${formattedDate}</p>  
                 <p class="mb-0 small"><strong>Time: </strong>${formattedTime}</p>  
             </div>
