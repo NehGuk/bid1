@@ -11,4 +11,11 @@ export function createGallery(listingData) {
         </div>
     `;
   }
+  if (listingData.media.length === 1) {
+    const sliderButtons = document.querySelector("#slider-buttons-container");
+    sliderButtons.style.display = "none";
+
+    const sliderArrows = document.querySelector("#slider-arrows");
+    sliderArrows.style.display = "none";
+  }
 }
