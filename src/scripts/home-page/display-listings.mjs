@@ -23,7 +23,7 @@ export function displayListingsHome(allListings) {
 
     listingsContainer.innerHTML += `
         <div class="col">
-              <div class="card h-100">
+              <div class="card h-100 border-1 bg-light">
                 <a href="/item.html?id=${allListings[i].id}"><img src="${allListings[i].media[0]}" class="card-img-top" style="height: 20rem; object-fit: cover" alt="Image caption: ${allListings[i].title}"></a>
                 <div class="card-body">
                   <a href="/item.html?id=${allListings[i].id}" class="text-decoration-none"><h3 class="card-title pb-0">${allListings[i].title}</h3></a>
@@ -34,7 +34,7 @@ export function displayListingsHome(allListings) {
                 <hr>
                   <p class="mb-0"><strong>Bids: </strong>${allListings[i].bids.length}</p>
                   <p class="mb-3"><strong>Ends at: </strong>${formattedDate}, <span class="small">${formattedTime}</span></p>
-                  <a href="/item.html?id=${allListings[i].id}"><button class="btn btn-primary px-4">Bid now</button></a>
+                  <a href="/item.html?id=${allListings[i].id}"><button class="btn btn-primary px-4 mb-2">Bid now</button></a>
                   </div>
               </div>
             </div>
