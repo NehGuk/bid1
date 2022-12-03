@@ -1,3 +1,5 @@
+// Get the item ID via the query string from the previous page
+
 // import the URL for the API call
 import { getListingURL } from "../api/api-base-urls.mjs";
 const listingURL = getListingURL("fe677260-8522-43b4-b19f-e76891ef53dc");
