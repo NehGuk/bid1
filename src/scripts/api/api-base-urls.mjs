@@ -30,3 +30,6 @@ export function getProfileURL(name) {
 export function getListingURL(listingID) {
   return `${API_BASE_URL}/auction/listings/${listingID}?_seller=true&_bids=true`;
 }
+
+// Create entry
+export const createEntryURL = `${API_BASE_URL}/auction/listings`;

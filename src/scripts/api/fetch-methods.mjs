@@ -43,4 +43,12 @@ export const fetchMetdhods = {
       Authorization: `Bearer ${token}`,
     },
   },
+  createEntry: {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+      body: "",
+    },
+  },
 };
