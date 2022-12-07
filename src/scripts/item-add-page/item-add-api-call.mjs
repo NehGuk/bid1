@@ -26,9 +26,6 @@ addNewItemForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
   async function createNewIteminAPI() {
-    console.log(createEntryURL);
-    console.log(createEntry);
-
     const response = await fetch(createEntryURL, createEntry);
     const json = await response.json();
   }
