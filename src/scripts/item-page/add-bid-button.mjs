@@ -14,7 +14,6 @@ import { sendBidToAPI } from "./add-bid-api-call.mjs";
 
 const bidButton = document.querySelector("#bid-button");
 const bidAmount = document.querySelector("#bid-amount");
-console.log(typeof bidAmount);
 
 bidButton.addEventListener("click", (event) => {
   event.preventDefault();
