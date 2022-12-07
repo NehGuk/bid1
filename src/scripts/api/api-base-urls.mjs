@@ -21,7 +21,7 @@ export function sendAvatarURL(name) {
   return `${API_BASE_URL}/auction/profiles/${name}/media`;
 }
 
-// Profile
+// Get profile
 export function getProfileURL(name) {
   return `${API_BASE_URL}/auction/profiles/${name}?_listings=true`;
 }
