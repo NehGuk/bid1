@@ -4,8 +4,7 @@ const userEmail = localStorage.getItem("email");
 const userCredits = localStorage.getItem("credits");
 
 function showUserAvatar() {
-  if (userAvatar === "null") {
-    console.log("No user avatar?");
+  if (!userAvatar) {
     const userAvatarContainer = document.querySelector(
       "#user-avatar-container"
     );
