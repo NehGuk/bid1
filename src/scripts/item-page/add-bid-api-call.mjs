@@ -1,14 +1,6 @@
-console.log("Adding bidddddd");
+export async function sendBidToAPI(url, method) {
+  console.log("Sending bidddd, yeaaaaahhhh!");
 
-const bidButton = document.querySelector("#bid-button");
-const bidAmount = document.querySelector("#bid-amount");
-
-console.log(bidButton);
-
-bidButton.addEventListener("click", (event) => {
-  event.preventDefault();
-  console.log("Clicked");
-  console.log(bidAmount.value);
-  console.log(location);
-  console.log(location.href);
-});
+  const response = await fetch(url, method);
+  const json = await response.json();
+}
