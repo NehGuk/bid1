@@ -11,6 +11,8 @@ const endsAt = `${date.value}T${time.value}`;
 const media1 = document.querySelector("#media1");
 const media2 = document.querySelector("#media2");
 const media3 = document.querySelector("#media3");
+const errorMessage = document.querySelector("#error-message");
+errorMessage.style.display = "none";
 
 const itemObject = {
   title: `${title.value}`,
@@ -28,6 +30,11 @@ addNewItemForm.addEventListener("submit", (event) => {
   async function createNewIteminAPI() {
     const response = await fetch(createEntryURL, createEntry);
     const json = await response.json();
+    console.log(response.status);
+    if (response.status !== 201) {
+      errorMessage.style.display = "block";
+      errorMessage.innerHTML = `Make sure you include 3 valid images. ${json.errors[0].message}.`;
+    }
   }
   createNewIteminAPI();
 
