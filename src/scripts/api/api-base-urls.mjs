@@ -33,3 +33,8 @@ export function getListingURL(listingID) {
 
 // Create entry
 export const createEntryURL = `${API_BASE_URL}/auction/listings`;
+
+// Get all listings by profile
+export function getListingsByProfileURL(name) {
+  return `${API_BASE_URL}/auction/profiles/${name}/listings?_seller=true&_bids=true&sort=created&sortOrder=desc`;
+}
