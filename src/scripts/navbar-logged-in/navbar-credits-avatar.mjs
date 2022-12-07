@@ -21,5 +21,7 @@ async function loadUserCredits() {
     "#user-credits-container"
   );
   userCreditsContainer.innerHTML = `${json.credits}`;
+  // send credits to localStorage
+  localStorage.setItem("credits", json.credits);
 }
 loadUserCredits();
