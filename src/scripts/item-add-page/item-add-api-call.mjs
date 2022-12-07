@@ -33,7 +33,7 @@ addNewItemForm.addEventListener("submit", (event) => {
     console.log(response.status);
     if (response.status !== 201) {
       errorMessage.style.display = "block";
-      errorMessage.innerHTML = `Make sure you include 3 valid images. ${json.errors[0].message}.`;
+      errorMessage.innerHTML = `${json.errors[0].message}.`;
     }
   }
   createNewIteminAPI();
