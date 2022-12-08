@@ -12,7 +12,7 @@ loadUserAvatar();
 
 import { getProfileURL } from "../api/api-base-urls.mjs";
 import { fetchMetdhods } from "../api/fetch-methods.mjs";
-async function loadUserCredits() {
+export async function loadUserCredits() {
   const userName = localStorage.getItem("name");
   const { getProfile } = fetchMetdhods;
   const response = await fetch(getProfileURL(userName), getProfile);
