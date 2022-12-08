@@ -1,3 +1,5 @@
+import { showEditiOptions } from "./own-item-hidden-bid.mjs";
+
 export function displayItemInfo(itemInfo) {
   const itemName = document.querySelector("#item-name");
   itemName.innerHTML = `
@@ -42,4 +44,12 @@ export function displayItemInfo(itemInfo) {
         <p><strong>Date added: </strong>${formattedCreatedDate}, <span class="small">${formattedCreatedTime}</span></p>
         <p><strong>Deadline: </strong>${formattedDeadlineDate}, <span class="small">${formattedDeadlineTime}</span></p>
   `;
+
+  function enableUserToEditOwnEntry() {
+    const userName = localStorage.getItem("name");
+    if (userName === itemInfo.seller.name) {
+      showEditiOptions();
+    }
+  }
+  enableUserToEditOwnEntry();
 }
