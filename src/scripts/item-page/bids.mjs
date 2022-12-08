@@ -30,7 +30,7 @@ export function displayBids(itemInfo) {
     bidsContainer.innerHTML = `
         <div class="row mb-3">
             <div class="col text-center">
-              <p class="mb-1">Nothing yet! Be the first one to bid!</p>  
+              <p class="mb-1">Nothing yet! Who's gonna go first?</p>  
             </div>
         </div>
     `;
