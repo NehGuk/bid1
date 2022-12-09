@@ -22,10 +22,10 @@ export function displayListingsLoggedOut(allListings) {
     );
 
     listingsContainer.innerHTML += `
-        <div class="col">
-              <div class="card h-100">
-                <img src="${allListings[i].media[0]}" class="card-img-top" style="height: 20rem; object-fit: cover" alt="Image caption: ${allListings[i].title}">
-                <div class="card-body">
+        <div class="col p-3">
+              <div class="card h-100 border-0">
+                <img src="${allListings[i].media[0]}" class="card-img-top" style="height: 15rem; object-fit: cover" alt="Image caption: ${allListings[i].title}">
+                <div class="card-body bg-light">
                   <h3 class="card-title pb-0">${allListings[i].title}</h3>
                   <p class="card-text">${allListings[i].description}</p>
                   
