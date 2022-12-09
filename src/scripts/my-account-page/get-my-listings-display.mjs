@@ -12,8 +12,8 @@ export function displayMyListings(myListings) {
       { hour: "2-digit", minute: "2-digit" }
     );
     cardsContainer.innerHTML += `
-        <div class="col">
-                <div class="card h-100 border-1 bg-light">
+        <div class="col p-3">
+                <div class="card h-100 border-1 bg-light border-0 ">
                     <a href="/item.html?id=${myListings[i].id}"><img src="${myListings[i].media[0]}" class="card-img-top" style="height: 20rem; object-fit: cover" alt="Image caption: ${myListings[i].title}"></a>
                     <div class="card-body">
                     <a href="/item.html?id=${myListings[i].id}" class="text-decoration-none"><h3 class="card-title pb-0">${myListings[i].title}</h3></a>

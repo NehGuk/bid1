@@ -14,7 +14,7 @@ export function displayBids(itemInfo) {
     bidsContainer.innerHTML += `
         <div class="row mb-3">
             <div class="col">
-                <p class="mb-1 bg-dark rounded p-3"><strong>${itemInfo[i].amount}</strong></p>
+                <p class="mb-1 bg-info rounded p-3"><strong>${itemInfo[i].amount}</strong></p>
             </div>
             <div class="col text-start">
                 <p class="mb-0"><strong>${itemInfo[i].bidderName}</strong></p>

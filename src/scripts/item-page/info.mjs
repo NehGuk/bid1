@@ -3,7 +3,7 @@ import { showEditiOptions } from "./own-item-hidden-bid.mjs";
 export function displayItemInfo(itemInfo) {
   const itemName = document.querySelector("#item-name");
   itemName.innerHTML = `
-    <h1 class="text-center">${itemInfo.title}</h1>
+    <h1 class="text-center mt-5">${itemInfo.title}</h1>
   `;
 
   const formattedDeadlineDate = new Date(itemInfo.endsAt).toLocaleDateString(
@@ -40,9 +40,9 @@ export function displayItemInfo(itemInfo) {
   itemDetails.innerHTML = `
   <h2 class="mt-3 mb-1">Description</h2>
         <p>${itemInfo.description}</p>
-        <p><strong>Owner: </strong>${itemInfo.seller.name}</p>
-        <p><strong>Date added: </strong>${formattedCreatedDate}, <span class="small">${formattedCreatedTime}</span></p>
-        <p><strong>Deadline: </strong>${formattedDeadlineDate}, <span class="small">${formattedDeadlineTime}</span></p>
+        <p><strong>OWNER | </strong>${itemInfo.seller.name}</p>
+        <p><strong class="text-dark">DATE ADDED | </strong>${formattedCreatedDate}, <span class="small">${formattedCreatedTime}</span></p>
+        <p><strong>DEADLINE | </strong>${formattedDeadlineDate}, <span class="small">${formattedDeadlineTime}</span></p>
   `;
 
   function enableUserToEditOwnEntry() {
