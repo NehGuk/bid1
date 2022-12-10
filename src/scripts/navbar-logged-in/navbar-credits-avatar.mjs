@@ -1,11 +1,10 @@
 function loadUserAvatar() {
-  const avatarURLContainer = document.querySelector("#avatar-nav");
-  const avatarURL = localStorage.getItem("avatar");
-  avatarURLContainer.src = avatarURL;
+  const avatarNavURLContainer = document.querySelector("#avatar-nav");
+  const avatarNavURL = localStorage.getItem("avatar");
+  avatarNavURLContainer.src = avatarNavURL;
 
-  // if no avatar, use default avatar image
-  if (!avatarURL) {
-    avatarURLContainer.src = "/assets/sample-image.png";
+  if (avatarNavURL === "null") {
+    avatarNavURLContainer.src = "/assets/sample-image.png";
   }
 }
 loadUserAvatar();
