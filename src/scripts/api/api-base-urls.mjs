@@ -8,7 +8,7 @@ export const allListingsLoggedOutURL = `${API_BASE_URL}/auction/listings?_seller
 export const allListingsDESC = `${API_BASE_URL}/auction/listings?_seller=true&_bids=true&sort=created&sortOrder=desc&_active=true`;
 
 // Get all listings ASC
-export const allListingsASC = `${API_BASE_URL}/auction/listings?_seller=true&_bids=true&sort=created&sortOrder=asc`;
+export const allListingsASC = `${API_BASE_URL}/auction/listings?_seller=true&_bids=true&sort=created&sortOrder=asc&_active=true`;
 
 // Register user
 export const registerUserURL = `${API_BASE_URL}/auction/auth/register`;
