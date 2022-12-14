@@ -1,5 +1,3 @@
-console.log("hasdhasjda");
-
 let dateNow = new Date();
 
 const formattedDateNow = dateNow.toLocaleDateString("en-us", {

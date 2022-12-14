@@ -13,6 +13,7 @@
     <script defer type="module" src="/src/scripts/navbar-logged-in/navbar-credits-avatar.mjs"></script>
     <script defer type="module" src="/src/scripts/home-page/home-api-call.mjs"></script>
     <script defer type="module" src="/src/scripts/home-page/greeting.mjs"></script>
+    <script defer type="module" src="/src/scripts/home-page/editors-picks.mjs"></script>
     
     <title>BID7</title>
 </head>
@@ -50,17 +51,11 @@
     <!-- EDITOR'S PICK -->
     <section class="px-5">
       <hr>
-      <h2>Editor's choice</h2>
+      <h2>Editor's pick</h2>
       <div class="container my-5">
         <div class="card row flex-row-reverse border-0 bg-light">
-            <img class="col-lg-6 card-img-end img-fluid p-0" style="border-top-right-radius: 5px; border-bottom-right-radius: 10px" src="https://picsum.photos/300/200"/>
-            <div class="col-lg-6 card-body">
-                <h1 class="card-title">Item name</h1>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <hr style="width: 66%">
-                <p class="mb-0"><strong>Bids: </strong>${allListings[i].bids.length}</p>
-                <p class="mb-3"><strong>Ends at: </strong>${formattedDate}, <span class="small">${formattedTime}</span></p>
-                <a href="/item.html?id=${allListings[i].id}"><button class="btn btn-primary px-4 mb-2">Bid now</button></a>
+            <img class="col-lg-6 card-img-end img-fluid p-0" style="border-top-right-radius: 5px; border-bottom-right-radius: 10px; object-fit: cover;" src="/assets/sample-image.png" id="editor-pick-image" id="editor-pick-image"/>
+            <div class="col-lg-6 card-body" id="editor-pick-info">
             </div>
         </div>
       </div>
