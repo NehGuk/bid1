@@ -50,9 +50,28 @@
     <!-- MAIN CONTENT -->
     <section class="px-5">
       <hr>
-      <h2>Browse our listings</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-3" id="listingsContainer">
+      <!-- FILTERS AND SEARCH BAR -->
+      <div class="row mb-4">
+        <div class="col">
+        <h2>Active listings</h2>  
         </div>
+        <div class="col mb-4 text-center">
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-info active" id="filter-desc">Newest first</button>
+            <button type="button" class="btn btn-info" id="filter-asc">Oldest first</button>  
+          </div>
+        </div>
+        <div class="col" style="min-width: 250px">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="text" placeholder="Search..." aria-label="Search" id="search-input">
+            <button class="btn btn-outline-primary" type="button" id="clear-button">Clear</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- LISTINGS CONTAINER -->
+      <div class="row row-cols-1 row-cols-md-3 g-3" id="listingsContainer">
+      </div>
     </section>
 
     
