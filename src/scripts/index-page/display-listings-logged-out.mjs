@@ -34,7 +34,7 @@ export function displayListingsLoggedOut(allListings) {
                 <hr>
                   <p class="mb-0"><strong>Bids: </strong>${allListings[i].bids.length}</p>
                   <p class="mb-3"><strong>Ends at: </strong>${formattedDate}, <span class="small">${formattedTime}</span></p>
-                  <a href="/signup.html"><button class="btn btn-primary" style="width: 50%">Bid now</button></a>
+                  <a href="/login.html"><button class="btn btn-primary" style="width: 50%"><strong>Bid now</strong></button></a>
                   </div>
               </div>
             </div>
