@@ -19,7 +19,7 @@ export function showEditorPick(allListings) {
     <hr style="width: 66%">
     <p class="mb-0"><strong>Bids: </strong>${allListings[9].bids.length}</p>
     <p class="mb-3"><strong>Ends at: </strong>${formattedDate}, <span class="small">${formattedTime}</span></p>
-    <a href="/item.html?id=${allListings[9].id}"><button class="btn btn-primary px-4 mb-2">Bid now</button></a>
+    <a href="/item.html?id=${allListings[9].id}"><button class="btn btn-primary px-4 mb-2"><strong>Bid now</strong></button></a>
   
   `;
 }
