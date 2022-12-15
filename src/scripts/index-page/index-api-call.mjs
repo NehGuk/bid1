@@ -6,11 +6,12 @@ import { displayListingsLoggedOut } from "./display-listings-logged-out.mjs";
 
 export async function fetchListingsLoggedOut(url) {
   try {
-    const response = await fetch(allListingsDESC);
+    const response = await fetch(url);
     const allListings = await response.json();
+
     displayListingsLoggedOut(allListings);
   } catch (error) {
     console.log(error);
   }
 }
-fetchListingsLoggedOut();
+fetchListingsLoggedOut(allListingsDESC);
