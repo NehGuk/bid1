@@ -34,7 +34,7 @@ export function displayListingsHome(allListings) {
                 <hr>
                   <p class="mb-0"><strong>Bids: </strong>${allListings[i].bids.length}</p>
                   <p class="mb-3"><strong>Ends at: </strong>${formattedDate}, <span class="small">${formattedTime}</span></p>
-                  <a href="/item.html?id=${allListings[i].id}"><button class="btn btn-primary px-4 mb-2">Bid now</button></a>
+                  <a href="/item.html?id=${allListings[i].id}"><button class="btn btn-primary px-4 mb-2"><strong>Bid now</strong></button></a>
                   </div>
               </div>
             </div>
