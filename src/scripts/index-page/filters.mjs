@@ -3,8 +3,6 @@ import { allListingsASC } from "../api/api-base-urls.mjs";
 
 import { fetchListingsLoggedOut } from "./index-api-call.mjs";
 
-console.log("Filteringgg nooooooow");
-
 const newestFirstButton = document.querySelector("#newest-first-button");
 const oldestFirstButton = document.querySelector("#oldest-first-button");
 
