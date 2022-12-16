@@ -2,9 +2,9 @@ const searchInput = document.querySelector("#search-input");
 const searchClearButton = document.querySelector("#search-clear-button");
 const statusMessageContainer = document.querySelector("#status-container");
 
-import { displayListingsLoggedOut } from "./display-listings-logged-out.mjs";
+import { displayListingsHome } from "./display-listings.mjs";
 
-export function searchListings(allListings) {
+export function searchListingsHome(allListings) {
   searchInput.addEventListener("input", (event) => {
     let value = event.target.value;
     let filteredArray = [];
@@ -21,18 +21,18 @@ export function searchListings(allListings) {
       } else if (filteredArray.length === 0) {
         statusMessageContainer.style.display = "block";
         statusMessageContainer.innerHTML = `
-        <p class="">Oops! No items match the search terms</p>
-          `;
+            <p class="">Oops! No items match the search terms</p>
+              `;
       }
     }
-    displayListingsLoggedOut(filteredArray);
+    displayListingsHome(filteredArray);
   });
 }
 
-export function clearSearchField(allListings) {
+export function clearSearchFieldHome(allListings) {
   searchClearButton.addEventListener("click", () => {
     searchInput.value = "";
     statusMessageContainer.innerHTML = ``;
-    displayListingsLoggedOut(allListings);
+    displayListingsHome(allListings);
   });
 }

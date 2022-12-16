@@ -6,12 +6,17 @@ const { getListing } = fetchMetdhods;
 
 import { displayListingsHome } from "./display-listings.mjs";
 
+import { searchListingsHome } from "./search-bar.mjs";
+import { clearSearchFieldHome } from "./search-bar.mjs";
+
 export async function fetchListings(url, method) {
   try {
     const response = await fetch(url, getListing);
     const allListings = await response.json();
     displayListingsHome(allListings);
     showEditorPick(allListings);
+    searchListingsHome(allListings);
+    clearSearchFieldHome(allListings);
   } catch (error) {
     console.log(error);
   }
