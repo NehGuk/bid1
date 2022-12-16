@@ -1,5 +1,14 @@
-console.log("SEND THE API CALL TO EDIT THE LISTING");
+export function updateListingOnAPI(json) {
+  console.log("UPDATING LISTING ON THE API");
+  console.log(json);
 
-//import { updateEntryURL } from "../api/api-base-urls.mjs";
+  const updateItemForm = document.querySelector("#update-item-form");
+  const updateButton = document.querySelector("#update-item-button");
+  const errorMessage = document.querySelector("#error-message");
+  errorMessage.style.display = "none";
 
-//updateEntryURL("asdasddsdw231");
+  updateItemForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    console.log("Button UPDATE clicked!");
+  });
+}

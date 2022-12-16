@@ -15,8 +15,6 @@ const media1 = document.querySelector("#media1");
 const media2 = document.querySelector("#media2");
 const media3 = document.querySelector("#media3");
 
-console.log(new Date().toISOString().slice(0, -14));
-
 addNewItemForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
