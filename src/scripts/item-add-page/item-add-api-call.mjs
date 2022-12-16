@@ -6,18 +6,21 @@ const addNewItemForm = document.querySelector("#add-new-item-form");
 const errorMessage = document.querySelector("#error-message");
 errorMessage.style.display = "none";
 
+const title = document.querySelector("#title");
+const description = document.querySelector("#description");
+const date = document.querySelector("#date");
+date.min = new Date().toISOString().slice(0, -14);
+const time = document.querySelector("#time");
+const media1 = document.querySelector("#media1");
+const media2 = document.querySelector("#media2");
+const media3 = document.querySelector("#media3");
+
+console.log(new Date().toISOString().slice(0, -14));
+
 addNewItemForm.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const title = document.querySelector("#title");
-  const description = document.querySelector("#description");
-  const date = document.querySelector("#date");
-  const time = document.querySelector("#time");
   const endsAt = new Date(`${date.value}T${time.value}`);
-
-  const media1 = document.querySelector("#media1");
-  const media2 = document.querySelector("#media2");
-  const media3 = document.querySelector("#media3");
 
   const itemObject = {
     title: `${title.value}`,
