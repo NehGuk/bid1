@@ -8,7 +8,7 @@ import { displayListingsHome } from "./display-listings.mjs";
 
 export async function fetchListings(url, method) {
   try {
-    const response = await fetch(allListingsDESC, getListing);
+    const response = await fetch(url, getListing);
     const allListings = await response.json();
     displayListingsHome(allListings);
     showEditorPick(allListings);
@@ -16,4 +16,4 @@ export async function fetchListings(url, method) {
     console.log(error);
   }
 }
-fetchListings();
+fetchListings(allListingsDESC);
