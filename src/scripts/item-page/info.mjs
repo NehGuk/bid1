@@ -1,4 +1,4 @@
-import { showEditiOptions } from "./own-item-hidden-bid.mjs";
+import { showEditButton } from "./own-item-hidden-bid.mjs";
 import { displayEndedMessage } from "./ended-listing.mjs";
 
 export function displayItemInfo(itemInfo) {
@@ -51,7 +51,7 @@ export function displayItemInfo(itemInfo) {
   function enableUserToEditOwnEntry() {
     const userName = localStorage.getItem("name");
     if (userName === itemInfo.seller.name) {
-      showEditiOptions();
+      showEditButton(itemInfo);
     }
   }
   enableUserToEditOwnEntry();
