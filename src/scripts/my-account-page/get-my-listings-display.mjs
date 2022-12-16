@@ -34,7 +34,7 @@ export function displayMyListings(myListings) {
                     <p class="mb-0"><strong>Bids: </strong>${myListings[i].bids.length}</p>
                     <p class="mb-0"><strong>Created: </strong>${formattedPostDate} <span class="small text-muted">| ${formattedPostTime}</span></p>
                     <p class="mb-3"><strong>Ends at: </strong>${formattedDeadlineDate} <span class="small text-muted">| ${formattedDeadlineTime}</span></p>
-                    <a href="/item.html?id=${myListings[i].id}"><button class="btn btn-primary px-4 mb-2"><strong>Bid now</strong></button></a>
+                    <a href="/item.html?id=${myListings[i].id}"><button class="btn btn-primary px-4 mb-2"><strong>Open</strong></button></a>
                     </div>
                 </div>
                 </div>
