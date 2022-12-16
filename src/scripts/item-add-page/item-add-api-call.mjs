@@ -13,7 +13,8 @@ addNewItemForm.addEventListener("submit", (event) => {
   const description = document.querySelector("#description");
   const date = document.querySelector("#date");
   const time = document.querySelector("#time");
-  const endsAt = `${date.value}T${time.value}`;
+  const endsAt = new Date(`${date.value}T${time.value}`);
+
   const media1 = document.querySelector("#media1");
   const media2 = document.querySelector("#media2");
   const media3 = document.querySelector("#media3");
