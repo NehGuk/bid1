@@ -1,5 +1,4 @@
 import { allListingsDESC } from "../api/api-base-urls.mjs";
-import { allListingsASC } from "../api/api-base-urls.mjs";
 import { fetchMetdhods } from "../api/fetch-methods.mjs";
 import { showEditorPick } from "./editors-pick.mjs";
 const { getListing } = fetchMetdhods;

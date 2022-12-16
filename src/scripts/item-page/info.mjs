@@ -1,4 +1,5 @@
 import { showEditiOptions } from "./own-item-hidden-bid.mjs";
+import { displayEndedMessage } from "./ended-listing.mjs";
 
 export function displayItemInfo(itemInfo) {
   const itemName = document.querySelector("#item-name");
@@ -54,4 +55,6 @@ export function displayItemInfo(itemInfo) {
     }
   }
   enableUserToEditOwnEntry();
+
+  displayEndedMessage(itemInfo);
 }
