@@ -7,7 +7,6 @@ export function showEditButton(itemInfo) {
   const editItemButton = document.querySelector("#edit-item-button");
 
   editItemButton.addEventListener("click", () => {
-    console.log(itemInfo.id);
     location.href = `/item-edit.html?id=${itemInfo.id}`;
   });
 }

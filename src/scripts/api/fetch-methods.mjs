@@ -51,6 +51,14 @@ export const fetchMetdhods = {
     },
     body: "",
   },
+  updateEntry: {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+    body: "",
+  },
   sendBidMethod: {
     method: "POST",
     headers: {
