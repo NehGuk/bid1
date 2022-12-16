@@ -3,14 +3,23 @@ export function displayMyListings(myListings) {
   cardsContainer.innerHTML = ``;
 
   for (let i = 0; i < myListings.length; i++) {
-    const formattedDate = new Date(myListings[i].endsAt).toLocaleDateString(
-      "en-us",
-      { month: "short", day: "numeric" }
-    );
-    const formattedTime = new Date(myListings[i].endsAt).toLocaleTimeString(
-      "en-GB",
-      { hour: "2-digit", minute: "2-digit" }
-    );
+    const formattedPostDate = new Date(
+      myListings[i].created
+    ).toLocaleDateString("en-us", {
+      month: "short",
+      day: "numeric",
+    });
+    const formattedPostTime = new Date(
+      myListings[i].created
+    ).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+
+    const formattedDeadlineDate = new Date(
+      myListings[i].endsAt
+    ).toLocaleDateString("en-us", { month: "short", day: "numeric" });
+    const formattedDeadlineTime = new Date(
+      myListings[i].endsAt
+    ).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+
     cardsContainer.innerHTML += `
         <div class="col p-3">
                 <div class="card h-100 border-1 bg-light border-0 ">
@@ -23,7 +32,8 @@ export function displayMyListings(myListings) {
                     <div class="card-footer bg-light border-0 pt-0 mt-0">
                     <hr>
                     <p class="mb-0"><strong>Bids: </strong>${myListings[i].bids.length}</p>
-                    <p class="mb-3"><strong>Ends at: </strong>${formattedDate}, <span class="small">${formattedTime}</span></p>
+                    <p class="mb-0"><strong>Created: </strong>${formattedPostDate} <span class="small text-muted">| ${formattedPostTime}</span></p>
+                    <p class="mb-3"><strong>Ends at: </strong>${formattedDeadlineDate} <span class="small text-muted">| ${formattedDeadlineTime}</span></p>
                     <a href="/item.html?id=${myListings[i].id}"><button class="btn btn-primary px-4 mb-2"><strong>Bid now</strong></button></a>
                     </div>
                 </div>

@@ -9,6 +9,7 @@ export function displayItemInfo(itemInfo) {
   const formattedDeadlineDate = new Date(itemInfo.endsAt).toLocaleDateString(
     "en-us",
     {
+      year: "numeric",
       month: "short",
       day: "numeric",
     }
@@ -24,6 +25,7 @@ export function displayItemInfo(itemInfo) {
   const formattedCreatedDate = new Date(itemInfo.created).toLocaleDateString(
     "en-us",
     {
+      year: "numeric",
       month: "short",
       day: "numeric",
     }
@@ -41,8 +43,8 @@ export function displayItemInfo(itemInfo) {
   <h2 class="mt-3 mb-1">Description</h2>
         <p>${itemInfo.description}</p>
         <p><strong>OWNER | </strong>${itemInfo.seller.name}</p>
-        <p><strong class="text-dark">DATE ADDED | </strong>${formattedCreatedDate}, <span class="small">${formattedCreatedTime}</span></p>
-        <p><strong>DEADLINE | </strong>${formattedDeadlineDate}, <span class="small">${formattedDeadlineTime}</span></p>
+        <p><strong class="text-dark">DATE ADDED | </strong>${formattedCreatedDate}<span class="small text-muted">, ${formattedCreatedTime}</span></p>
+        <p><strong>ENDS AT | </strong>${formattedDeadlineDate}<span class="small text-muted">, ${formattedDeadlineTime}</span></p>
   `;
 
   function enableUserToEditOwnEntry() {

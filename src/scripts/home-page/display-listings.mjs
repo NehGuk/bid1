@@ -12,14 +12,19 @@ export function displayListingsHome(allListings) {
         "Check out this item and place your bid before you regret it!";
     }
 
-    const formattedDate = new Date(allListings[i].endsAt).toLocaleDateString(
-      "en-us",
-      { month: "short", day: "numeric" }
-    );
-    const formattedTime = new Date(allListings[i].endsAt).toLocaleTimeString(
-      "en-GB",
-      { hour: "2-digit", minute: "2-digit" }
-    );
+    const formattedCreatedDate = new Date(
+      allListings[i].created
+    ).toLocaleDateString("en-us", { month: "short", day: "numeric" });
+    const formattedCreatedTime = new Date(
+      allListings[i].created
+    ).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+
+    const formattedDeadlineDate = new Date(
+      allListings[i].endsAt
+    ).toLocaleDateString("en-us", { month: "short", day: "numeric" });
+    const formattedDeadlineTime = new Date(
+      allListings[i].endsAt
+    ).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
 
     listingsContainer.innerHTML += `
         <div class="col p-3">
@@ -33,7 +38,8 @@ export function displayListingsHome(allListings) {
                 <div class="card-footer bg-light border-0 pt-0 mt-0">
                 <hr>
                   <p class="mb-0"><strong>Bids: </strong>${allListings[i].bids.length}</p>
-                  <p class="mb-3"><strong>Ends at: </strong>${formattedDate}, <span class="small">${formattedTime}</span></p>
+                  <p class="mb-0"><strong>Created: </strong>${formattedCreatedDate}<span class="small text-muted">, ${formattedCreatedTime}</span></p>
+                  <p class="mb-3"><strong>Ends at: </strong>${formattedDeadlineDate}<span class="small text-muted">, ${formattedDeadlineTime}</span></p>
                   <a href="/item.html?id=${allListings[i].id}"><button class="btn btn-primary px-4 mb-2"><strong>Bid now</strong></button></a>
                   </div>
               </div>
