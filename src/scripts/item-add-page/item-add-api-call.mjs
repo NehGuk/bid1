@@ -41,8 +41,6 @@ addNewItemForm.addEventListener("submit", (event) => {
         errorMessage.innerHTML = ``;
 
         for (let i = 0; i < json.errors.length; i++) {
-          console.log(i);
-          console.log(json.errors[i].message);
           errorMessage.style.display = "block";
           errorMessage.innerHTML += `${json.errors[i].message}<br>`;
         }

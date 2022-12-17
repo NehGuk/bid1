@@ -36,7 +36,6 @@ export function updateListingOnAPI(itemInfo) {
         } else {
           errorMessage.innerHTML = "";
           for (let i = 0; i < json.errors.length; i++) {
-            console.log(i);
             errorMessage.style.display = "block";
             errorMessage.innerHTML += `${json.errors[i].message}<br>`;
           }
