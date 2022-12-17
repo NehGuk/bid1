@@ -59,6 +59,13 @@ export const fetchMetdhods = {
     },
     body: "",
   },
+  deleteEntry: {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
+  },
   sendBidMethod: {
     method: "POST",
     headers: {

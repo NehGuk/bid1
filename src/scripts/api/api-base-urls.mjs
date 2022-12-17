@@ -39,6 +39,11 @@ export function updateEntryURL(itemID) {
   return `${API_BASE_URL}/auction/listings/${itemID}`;
 }
 
+// Delete entry
+export function deleteEntryURL(itemID) {
+  return `${API_BASE_URL}/auction/listings/${itemID}`;
+}
+
 // Get all listings by profile
 export function getListingsByProfileURL(name) {
   return `${API_BASE_URL}/auction/profiles/${name}/listings?_seller=true&_bids=true&sort=created&sortOrder=desc&_active=true`;

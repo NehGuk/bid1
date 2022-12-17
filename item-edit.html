@@ -14,6 +14,7 @@
     <script defer type="module" src="/src/scripts/item-edit-page/edit-item-api-call-fetch.mjs"></script>
     <script defer type="module" src="/src/scripts/item-edit-page/edit-item-prefill-form.mjs"></script>
     <script defer type="module" src="/src/scripts/item-edit-page/edit-item-api-call-send.mjs"></script>
+    <script defer type="module" src="/src/scripts/item-edit-page/delete-item-button.mjs"></script>
     
     
     <title>Edit item | BID7</title>
@@ -108,6 +109,10 @@
         <br>
         <br>
         <p class="text-center" id="error-message">Error message</p>
+        <hr class="mt-4">
+        <a class="text-decoration-none" style="cursor: pointer"><p class="text-center" id="delete-item-link">Delete item?</p></a>
+        <button type="button" class="w-100 btn btn-sm btn-dark text-white mt-3" id="delete-item-button"><strong>Yes, delete</strong></button>
+        <button type="button" class="w-100 btn btn-sm btn-light text-dark mt-3" id="cancel-button"><strong>Cancel</strong></button>
 
     </form>
     
