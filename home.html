@@ -20,7 +20,6 @@
     <script defer type="module" src="/src/scripts/navbar-logged-in/navbar-credits-avatar.mjs"></script>
     <script defer type="module" src="/src/scripts/home-page/home-api-call.mjs"></script>
     <script defer type="module" src="/src/scripts/home-page/greeting.mjs"></script>
-    <script defer type="module" src="/src/scripts/home-page/editors-pick.mjs"></script>
     <script defer type="module" src="/src/scripts/home-page/filters-home.mjs"></script>
     <script defer type="module" src="/src/scripts/home-page/search-bar.mjs"></script>
     
@@ -56,19 +55,64 @@
     <!-- HEADER -->
     <section class="container-fluid text-start px-5 my-5" id="greeting-container">    
     </section>
-
+    
     <!-- EDITOR'S PICK -->
-    <section class="px-5">
-      <hr>
-      <h2>Editor's pick</h2>
+    
       <div class="container my-5">
-        <div class="card row flex-row-reverse border-0 bg-light">
-            <img class="col-lg-6 card-img-end img-fluid p-0" style="border-top-right-radius: 5px; border-bottom-right-radius: 10px; max-height: 350px; object-fit: cover;" src="/assets/sample-image.png" id="editor-pick-image" id="editor-pick-image"/>
-            <div class="col-lg-6 card-body" id="editor-pick-info">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+          </div>
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="/assets/sample-image.png" width="100%" height="400px" style="object-fit:cover; -webkit-filter: blur(5px); filter: brightness(0.5) blur(5px)">
+              <div class="container">
+                <div class="carousel-caption text-center">
+                  <p class="small text-white">EDITOR'S CHOICE</p>
+                  <h3>Item name here</h3>    
+                  <p><a class="btn btn-lg btn-primary" href="#">Bid now</a></p>
+                </div>
+              </div>
             </div>
+
+            <div class="carousel-item">
+              <img src="/assets/feature-2scott-webb-WwWkgOMU8H8-unsplash.jpg" width="100%" height="400px" style="object-fit:cover; -webkit-filter: blur(5px); filter: brightness(0.5) blur(5px)">
+              <div class="container">
+                <div class="carousel-caption text-center">
+                  <p class="small text-white">EDITOR'S CHOICE</p>
+                  <h3>Item name here</h3>    
+                  <p><a class="btn btn-lg btn-primary" href="#">Bid now</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="/assets/feature1-christin-hume-Hcfwew744z4-unsplash.jpg" width="100%" height="400px" style="object-fit:cover; -webkit-filter: blur(5px); filter: brightness(0.5) blur(5px)">
+              <div class="container">
+                <div class="carousel-caption text-center">
+                  <p class="small text-white">EDITOR'S CHOICE</p>
+                  <h3>Item name here</h3>    
+                  <p><a class="btn btn-lg btn-primary" href="#">Bid now</a></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-    </section>
 
     <!-- MAIN CONTENT -->
     <section class="px-5">
