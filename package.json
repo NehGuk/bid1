@@ -1,6 +1,6 @@
 {
   "name": "Bid1 Auction Platform",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "BID1 Auction | Semester Project 2 | Noroff",
   "main": "index.js",
   "scripts": {
