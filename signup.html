@@ -57,24 +57,29 @@
               <input type="text" name="name" id="username" class="form-control" placeholder="Ola Nordmann" maxlength="20" pattern="^[\w]+$" title="Username must not contain punctuation symbols apart from underscore" required />
               <label for="username">Username</label>
             </div>
+
             <!-- email -->
             <div class="form-floating">
               <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com" maxlength="100" pattern="^[\w\-.]+@stud.?noroff.no$" title="Enter a valid @stud.noroff.no email address" required />
               <label for="email">Email</label>
             </div>
+
             <!-- password -->
             <div class="form-floating">
               <input type="password" name="password" id="password" class="form-control my-3" placeholder="Password" maxlength="20" minlength="8" pattern="^.(?=.{7,})(?=.[a-zA-Z]).*$" title="Password must be between 8 and 20 characters long" required />
               <label class="was-validated" for="password">Password</label>
             </div>
+
             <!-- signup button -->
             <button class="w-100 btn btn-lg btn-primary" type="submit"><strong>Register</strong></button>
             <br />
             <br />
+
             <!-- Error message -->
             <div class="checkbox mb-3" id="error-message-container">
               <p id="error-message">An error has occurred</p>
             </div>
+
             <!-- Click here to login -->
             <div class="checkbox mb-3 login-link">
               <label>
