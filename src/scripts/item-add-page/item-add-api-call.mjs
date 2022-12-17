@@ -31,20 +31,24 @@ addNewItemForm.addEventListener("submit", (event) => {
   createEntry.body = JSON.stringify(itemObject);
 
   async function createNewIteminAPI() {
-    const response = await fetch(createEntryURL, createEntry);
-    const json = await response.json();
-    if (response.status === 201) {
-      location.href = "/my-account.html";
-    } else {
-      errorMessage.style.display = "block";
-      errorMessage.innerHTML = ``;
-
-      for (let i = 0; i < json.errors.length; i++) {
-        console.log(i);
-        console.log(json.errors[i].message);
+    try {
+      const response = await fetch(createEntryURL, createEntry);
+      const json = await response.json();
+      if (response.status === 201) {
+        location.href = "/my-account.html";
+      } else {
         errorMessage.style.display = "block";
-        errorMessage.innerHTML += `${json.errors[i].message}<br>`;
+        errorMessage.innerHTML = ``;
+
+        for (let i = 0; i < json.errors.length; i++) {
+          console.log(i);
+          console.log(json.errors[i].message);
+          errorMessage.style.display = "block";
+          errorMessage.innerHTML += `${json.errors[i].message}<br>`;
+        }
       }
+    } catch (error) {
+      console.log(error);
     }
   }
   createNewIteminAPI();

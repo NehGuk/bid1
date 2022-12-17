@@ -8,8 +8,12 @@ import { fetchMetdhods } from "../api/fetch-methods.mjs";
 const { getListings } = fetchMetdhods;
 
 async function getMyListings() {
-  const response = await fetch(myListingsURL, getListings);
-  const json = await response.json();
-  displayMyListings(json);
+  try {
+    const response = await fetch(myListingsURL, getListings);
+    const json = await response.json();
+    displayMyListings(json);
+  } catch (error) {
+    console.log(error);
+  }
 }
 getMyListings();

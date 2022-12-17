@@ -12,15 +12,19 @@ loadUserAvatar();
 import { getProfileURL } from "../api/api-base-urls.mjs";
 import { fetchMetdhods } from "../api/fetch-methods.mjs";
 export async function loadUserCredits() {
-  const userName = localStorage.getItem("name");
-  const { getProfile } = fetchMetdhods;
-  const response = await fetch(getProfileURL(userName), getProfile);
-  const json = await response.json();
-  const userCreditsContainer = document.querySelector(
-    "#user-credits-container"
-  );
-  userCreditsContainer.innerHTML = `${json.credits}`;
-  // send credits to localStorage
-  localStorage.setItem("credits", json.credits);
+  try {
+    const userName = localStorage.getItem("name");
+    const { getProfile } = fetchMetdhods;
+    const response = await fetch(getProfileURL(userName), getProfile);
+    const json = await response.json();
+    const userCreditsContainer = document.querySelector(
+      "#user-credits-container"
+    );
+    userCreditsContainer.innerHTML = `${json.credits}`;
+    // send credits to localStorage
+    localStorage.setItem("credits", json.credits);
+  } catch (error) {
+    console.log(error);
+  }
 }
 loadUserCredits();

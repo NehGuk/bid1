@@ -22,10 +22,14 @@ import { displayBids } from "./bids.mjs";
 
 // doing the API call
 export async function getGalleryImages(listingURL) {
-  const response = await fetch(listingURL, getListing);
-  const json = await response.json();
-  createGallery(json);
-  displayItemInfo(json);
-  displayBids(json.bids);
+  try {
+    const response = await fetch(listingURL, getListing);
+    const json = await response.json();
+    createGallery(json);
+    displayItemInfo(json);
+    displayBids(json.bids);
+  } catch (error) {
+    console.log(error);
+  }
 }
 getGalleryImages(listingURL);
