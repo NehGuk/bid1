@@ -52,58 +52,59 @@
       </div>
     </nav>
 
-    <!-- HEADER -->
-    <section class="container-fluid text-start px-5 my-5" id="greeting-container"></section>
+    <div style="min-height: 80vh; max-width: 1600px; margin: auto">
+      <!-- HEADER -->
+      <section class="container-fluid text-start px-5 my-5" id="greeting-container"></section>
 
-    <!-- EDITOR'S PICKS -->
-    <div class="container my-5">
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+      <!-- EDITOR'S PICKS -->
+      <div class="container my-5">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+          </div>
+
+          <div class="carousel-inner" id="editors-choices-slider"></div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-
-        <div class="carousel-inner" id="editors-choices-slider"></div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <section class="px-5">
-      <hr />
-      <!-- filters and search bar -->
-      <div class="row mb-4">
-        <div class="col">
-          <h2>Active listings</h2>
-        </div>
-        <div class="col mb-4 text-center">
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-info active" id="newest-first-button">Newest first</button>
-            <button type="button" class="btn btn-info" id="oldest-first-button">Oldest first</button>
+      <!-- MAIN CONTENT -->
+      <section class="px-5">
+        <hr />
+        <!-- filters and search bar -->
+        <div class="row mb-4">
+          <div class="col">
+            <h2>Active listings</h2>
+          </div>
+          <div class="col mb-4 text-center">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-info active" id="newest-first-button">Newest first</button>
+              <button type="button" class="btn btn-info" id="oldest-first-button">Oldest first</button>
+            </div>
+          </div>
+          <div class="col" style="min-width: 250px">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="text" placeholder="Search..." aria-label="Search" id="search-input" />
+              <button class="btn btn-outline-primary" type="button" id="search-clear-button">Clear</button>
+            </form>
           </div>
         </div>
-        <div class="col" style="min-width: 250px">
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="text" placeholder="Search..." aria-label="Search" id="search-input" />
-            <button class="btn btn-outline-primary" type="button" id="search-clear-button">Clear</button>
-          </form>
-        </div>
-      </div>
 
-      <!-- listings container -->
-      <div class="text-center my-5" id="status-container"></div>
-      <div class="row row-cols-1 row-cols-md-3 g-3" id="listingsContainer"></div>
-    </section>
-
+        <!-- listings container -->
+        <div class="text-center my-5" id="status-container"></div>
+        <div class="row row-cols-1 row-cols-md-3 g-3" id="listingsContainer"></div>
+      </section>
+    </div>
     <!-- FOOTER -->
     <footer class="text-center text-lg-start text-dark bg-dark mt-5 py-3">
       <section class="text-light">

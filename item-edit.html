@@ -53,72 +53,73 @@
       </div>
     </nav>
 
-    <!-- HEADER -->
-    <section class="container px-5 m-5 col-lg-6 m-auto">
-      <h1 class="text-center mt-5 mb-0">Edit item</h1>
-    </section>
+    <div style="min-height: 80vh">
+      <!-- HEADER -->
+      <section class="container px-5 m-5 col-lg-6 m-auto">
+        <h1 class="text-center mt-5 mb-0">Edit item</h1>
+      </section>
 
-    <!-- ADD ITEM  -->
-    <div class="container px-4 py-5 col-lg-5 col-sm-12">
-      <form id="update-item-form">
-        <!-- title -->
-        <div class="">
-          <input type="text" name="title" id="title" class="form-control" placeholder="Item asdasdas das da name" maxlength="300" title="Please add a title to your post" />
-          <label class="was-validated" for="title" style="visibility: hidden">Title</label>
-        </div>
+      <!-- ADD ITEM  -->
+      <div class="container px-4 py-5 col-lg-5 col-sm-12">
+        <form id="update-item-form">
+          <!-- title -->
+          <div class="">
+            <input type="text" name="title" id="title" class="form-control" placeholder="Item asdasdas das da name" maxlength="300" title="Please add a title to your post" />
+            <label class="was-validated" for="title" style="visibility: hidden">Title</label>
+          </div>
 
-        <!-- description -->
-        <div class="">
-          <textarea name="description" id="description" class="form-control" placeholder="Item description" maxlength="280" rows="5"></textarea>
-          <label class="was-validated" for="description" style="visibility: hidden">Description</label>
-        </div>
+          <!-- description -->
+          <div class="">
+            <textarea name="description" id="description" class="form-control" placeholder="Item description" maxlength="280" rows="5"></textarea>
+            <label class="was-validated" for="description" style="visibility: hidden">Description</label>
+          </div>
 
-        <!-- ends at -->
-        <div class="mb-0">
-          <hr class="mb-1 text-primary" />
-          <p class="text-muted"><strong>Date and time can't be changed</strong></p>
-          <div class="row">
-            <div class="col">
-              <input type="date" name="date" id="date" class="form-control" title="Bid deadline" disabled />
-              <label class="was-validated" for="date" style="visibility: hidden">Date</label>
-            </div>
-            <div class="col">
-              <input type="time" name="time" id="time" class="form-control" title="Time" disabled />
-              <label class="was-validated" for="time" style="visibility: hidden">Time</label>
+          <!-- ends at -->
+          <div class="mb-0">
+            <hr class="mb-1 text-primary" />
+            <p class="text-muted"><strong>Date and time can't be changed</strong></p>
+            <div class="row">
+              <div class="col">
+                <input type="date" name="date" id="date" class="form-control" title="Bid deadline" disabled />
+                <label class="was-validated" for="date" style="visibility: hidden">Date</label>
+              </div>
+              <div class="col">
+                <input type="time" name="time" id="time" class="form-control" title="Time" disabled />
+                <label class="was-validated" for="time" style="visibility: hidden">Time</label>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- image url -->
-        <div class="mb-0">
-          <hr class="mb-1 text-primary" />
-          <p class="text-muted"><strong>Image gallery: please add 3 images</strong></p>
-          <input type="url" name="media1" id="media1" class="form-control" placeholder="Image URL 1" maxlength="1000" title="Example: https://upload.wikimedia.org/wikipedia/commons/1/13/Red_Knot_1_-_Boat_Harbour.jpg" required />
-          <label class="was-validated" for="media1" style="visibility: hidden">Media 1</label>
-        </div>
+          <!-- image url -->
+          <div class="mb-0">
+            <hr class="mb-1 text-primary" />
+            <p class="text-muted"><strong>Image gallery: please add 3 images</strong></p>
+            <input type="url" name="media1" id="media1" class="form-control" placeholder="Image URL 1" maxlength="1000" title="Example: https://upload.wikimedia.org/wikipedia/commons/1/13/Red_Knot_1_-_Boat_Harbour.jpg" required />
+            <label class="was-validated" for="media1" style="visibility: hidden">Media 1</label>
+          </div>
 
-        <div class="mb-0">
-          <input type="url" name="media2" id="media2" class="form-control" placeholder="Image URL 2" maxlength="1000" title="Example: https://upload.wikimedia.org/wikipedia/commons/1/13/Red_Knot_1_-_Boat_Harbour.jpg" required />
-          <label class="was-validated" for="media2" style="visibility: hidden">Media 2</label>
-        </div>
+          <div class="mb-0">
+            <input type="url" name="media2" id="media2" class="form-control" placeholder="Image URL 2" maxlength="1000" title="Example: https://upload.wikimedia.org/wikipedia/commons/1/13/Red_Knot_1_-_Boat_Harbour.jpg" required />
+            <label class="was-validated" for="media2" style="visibility: hidden">Media 2</label>
+          </div>
 
-        <div class="mb-0">
-          <input type="url" name="media3" id="media3" class="form-control" placeholder="Image URL 3" maxlength="1000" title="Example: https://upload.wikimedia.org/wikipedia/commons/1/13/Red_Knot_1_-_Boat_Harbour.jpg" required />
-          <label class="was-validated" for="media3" style="visibility: hidden">Media 3</label>
-        </div>
+          <div class="mb-0">
+            <input type="url" name="media3" id="media3" class="form-control" placeholder="Image URL 3" maxlength="1000" title="Example: https://upload.wikimedia.org/wikipedia/commons/1/13/Red_Knot_1_-_Boat_Harbour.jpg" required />
+            <label class="was-validated" for="media3" style="visibility: hidden">Media 3</label>
+          </div>
 
-        <!-- button -->
-        <button type="submit" class="w-100 btn btn-lg btn-primary text-white" id="update-item-button"><strong>Update</strong></button>
-        <br />
-        <br />
-        <p class="text-center" id="error-message">Error message</p>
-        <hr class="mt-4" />
-        <a class="text-decoration-none" style="cursor: pointer"><p class="text-center" id="delete-item-link">Delete item?</p></a>
-        <button type="button" class="w-100 btn btn-sm btn-dark text-white mt-3" id="delete-item-button"><strong>Yes, delete</strong></button>
-        <button type="button" class="w-100 btn btn-sm btn-light text-dark mt-3" id="cancel-button"><strong>Cancel</strong></button>
-      </form>
+          <!-- button -->
+          <button type="submit" class="w-100 btn btn-lg btn-primary text-white" id="update-item-button"><strong>Update</strong></button>
+          <br />
+          <br />
+          <p class="text-center" id="error-message">Error message</p>
+          <hr class="mt-4" />
+          <a class="text-decoration-none" style="cursor: pointer"><p class="text-center" id="delete-item-link">Delete item?</p></a>
+          <button type="button" class="w-100 btn btn-sm btn-dark text-white mt-3" id="delete-item-button"><strong>Yes, delete</strong></button>
+          <button type="button" class="w-100 btn btn-sm btn-light text-dark mt-3" id="cancel-button"><strong>Cancel</strong></button>
+        </form>
+      </div>
     </div>
-
     <!-- FOOTER -->
     <footer class="text-center text-lg-start text-dark bg-dark mt-5 py-3">
       <section class="text-light">

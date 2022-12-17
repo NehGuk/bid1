@@ -41,46 +41,47 @@
       </div>
     </nav>
 
-    <!-- HEADER -->
-    <div class="container-fluid text-center mt-5 mb-2">
-      <img class="" style="max-width: 15em; height: auto" src="/assets/logo-large.png" alt="Bid7 logo" />
-    </div>
-
-    <!-- LOGIN FORM -->
-    <section>
-      <div class="container px-4 py-1 col-lg-4 col-sm-12 text-center">
-        <h1 class="text-center mt-4 mb-4">Login</h1>
-        <div class="form-signin">
-          <form action="/signup-thank-you.html" id="login-form">
-            <!-- email -->
-            <div class="form-floating">
-              <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com" maxlength="100" pattern="^[\w\-.]+@stud.?noroff.no$" title="Enter a valid stud.noroff.no or noroff.no email address" required />
-              <label for="email">Email</label>
-            </div>
-            <!-- password -->
-            <div class="form-floating">
-              <input type="password" name="password" id="password" class="form-control my-3" placeholder="Password" maxlength="20" minlength="8" pattern="^.(?=.{7,})(?=.[a-zA-Z]).*$" title="Password must be between 8 and 20 characters long" required />
-              <label class="was-validated" for="password">Password</label>
-            </div>
-            <!-- login button -->
-            <button class="w-100 btn btn-lg btn-primary" type="submit"><strong>Login</strong></button>
-            <br />
-            <br />
-            <!-- error message -->
-            <div class="checkbox mb-3" id="error-message-container">
-              <p id="error-message">Oops... Something went wrong!</p>
-            </div>
-            <!-- Click here to login -->
-            <div class="checkbox mb-3 login-link">
-              <label>
-                <a href="/signup.html">Create a new account!</a>
-              </label>
-            </div>
-          </form>
-        </div>
+    <div style="min-height: 80vh">
+      <!-- HEADER -->
+      <div class="container-fluid text-center mt-5 mb-2">
+        <img class="" style="max-width: 15em; height: auto" src="/assets/logo-large.png" alt="Bid7 logo" />
       </div>
-    </section>
 
+      <!-- LOGIN FORM -->
+      <section>
+        <div class="container px-4 py-1 col-lg-4 col-sm-12 text-center">
+          <h1 class="text-center mt-4 mb-4">Login</h1>
+          <div class="form-signin">
+            <form action="/signup-thank-you.html" id="login-form">
+              <!-- email -->
+              <div class="form-floating">
+                <input type="email" name="email" id="email" class="form-control" placeholder="name@example.com" maxlength="100" pattern="^[\w\-.]+@stud.?noroff.no$" title="Enter a valid stud.noroff.no or noroff.no email address" required />
+                <label for="email">Email</label>
+              </div>
+              <!-- password -->
+              <div class="form-floating">
+                <input type="password" name="password" id="password" class="form-control my-3" placeholder="Password" maxlength="20" minlength="8" pattern="^.(?=.{7,})(?=.[a-zA-Z]).*$" title="Password must be between 8 and 20 characters long" required />
+                <label class="was-validated" for="password">Password</label>
+              </div>
+              <!-- login button -->
+              <button class="w-100 btn btn-lg btn-primary" type="submit"><strong>Login</strong></button>
+              <br />
+              <br />
+              <!-- error message -->
+              <div class="checkbox mb-3" id="error-message-container">
+                <p id="error-message">Oops... Something went wrong!</p>
+              </div>
+              <!-- Click here to login -->
+              <div class="checkbox mb-3 login-link">
+                <label>
+                  <a href="/signup.html">Create a new account!</a>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
     <!-- FOOTER -->
     <footer class="text-center text-lg-start text-dark bg-dark mt-5 py-3">
       <section class="text-light">
