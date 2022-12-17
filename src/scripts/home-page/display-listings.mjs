@@ -8,23 +8,14 @@ export function displayListingsHome(allListings) {
     }
 
     if (!allListings[i].description) {
-      allListings[i].description =
-        "Check out this item and place your bid before you regret it!";
+      allListings[i].description = "Check out this item and place your bid before you regret it!";
     }
 
-    const formattedCreatedDate = new Date(
-      allListings[i].created
-    ).toLocaleDateString("en-us", { month: "short", day: "numeric" });
-    const formattedCreatedTime = new Date(
-      allListings[i].created
-    ).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+    const formattedCreatedDate = new Date(allListings[i].created).toLocaleDateString("en-us", { month: "short", day: "numeric" });
+    const formattedCreatedTime = new Date(allListings[i].created).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
 
-    const formattedDeadlineDate = new Date(
-      allListings[i].endsAt
-    ).toLocaleDateString("en-us", { month: "short", day: "numeric" });
-    const formattedDeadlineTime = new Date(
-      allListings[i].endsAt
-    ).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+    const formattedDeadlineDate = new Date(allListings[i].endsAt).toLocaleDateString("en-us", { month: "short", day: "numeric" });
+    const formattedDeadlineTime = new Date(allListings[i].endsAt).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
 
     listingsContainer.innerHTML += `
         <div class="col p-3">

@@ -17,9 +17,7 @@ export async function loadUserCredits() {
     const { getProfile } = fetchMetdhods;
     const response = await fetch(getProfileURL(userName), getProfile);
     const json = await response.json();
-    const userCreditsContainer = document.querySelector(
-      "#user-credits-container"
-    );
+    const userCreditsContainer = document.querySelector("#user-credits-container");
     userCreditsContainer.innerHTML = `${json.credits}`;
     // send credits to localStorage
     localStorage.setItem("credits", json.credits);

@@ -1,13 +1,7 @@
 export function displayBids(itemInfo) {
   for (let i = 0; i < itemInfo.length; i++) {
-    const formattedDate = new Date(itemInfo[i].created).toLocaleDateString(
-      "en-us",
-      { month: "short", day: "numeric" }
-    );
-    const formattedTime = new Date(itemInfo[i].created).toLocaleTimeString(
-      "en-GB",
-      { hour: "2-digit", minute: "2-digit" }
-    );
+    const formattedDate = new Date(itemInfo[i].created).toLocaleDateString("en-us", { month: "short", day: "numeric" });
+    const formattedTime = new Date(itemInfo[i].created).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
 
     const bidsContainer = document.querySelector("#bids-container");
 

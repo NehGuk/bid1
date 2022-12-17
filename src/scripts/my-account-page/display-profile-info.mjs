@@ -5,14 +5,10 @@ const userCredits = localStorage.getItem("credits");
 
 function showUserAvatar() {
   if (userAvatar === "null") {
-    const userAvatarContainer = document.querySelector(
-      "#user-avatar-container"
-    );
+    const userAvatarContainer = document.querySelector("#user-avatar-container");
     userAvatarContainer.innerHTML = `<img src="/assets/sample-image.png" class="rounded-circle border border-info" style="width: 200px; height: 200px; object-fit: cover; border-width: 4px !important;" id="profile-avatar" alt=""></img>`;
   } else {
-    const userAvatarContainer = document.querySelector(
-      "#user-avatar-container"
-    );
+    const userAvatarContainer = document.querySelector("#user-avatar-container");
     userAvatarContainer.innerHTML = `<img src="${userAvatar}" class="rounded-circle border border-info" style="width: 150px; height: 150px; object-fit: cover; border-width: 4px !important;" id="profile-avatar" alt=""></img>`;
   }
 }

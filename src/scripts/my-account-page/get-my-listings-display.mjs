@@ -3,22 +3,14 @@ export function displayMyListings(myListings) {
   cardsContainer.innerHTML = ``;
 
   for (let i = 0; i < myListings.length; i++) {
-    const formattedPostDate = new Date(
-      myListings[i].created
-    ).toLocaleDateString("en-us", {
+    const formattedPostDate = new Date(myListings[i].created).toLocaleDateString("en-us", {
       month: "short",
       day: "numeric",
     });
-    const formattedPostTime = new Date(
-      myListings[i].created
-    ).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+    const formattedPostTime = new Date(myListings[i].created).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
 
-    const formattedDeadlineDate = new Date(
-      myListings[i].endsAt
-    ).toLocaleDateString("en-us", { month: "short", day: "numeric" });
-    const formattedDeadlineTime = new Date(
-      myListings[i].endsAt
-    ).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+    const formattedDeadlineDate = new Date(myListings[i].endsAt).toLocaleDateString("en-us", { month: "short", day: "numeric" });
+    const formattedDeadlineTime = new Date(myListings[i].endsAt).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
 
     cardsContainer.innerHTML += `
         <div class="col p-3">

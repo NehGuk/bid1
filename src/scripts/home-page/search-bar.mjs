@@ -12,10 +12,7 @@ export function searchListingsHome(allListings) {
     for (let i = 0; i < allListings.length; i++) {
       let currentPost = allListings[i];
 
-      if (
-        currentPost.title.toLowerCase().includes(value.toLowerCase()) ||
-        currentPost.description.toLowerCase().includes(value.toLowerCase())
-      ) {
+      if (currentPost.title.toLowerCase().includes(value.toLowerCase()) || currentPost.description.toLowerCase().includes(value.toLowerCase())) {
         filteredArray.push(currentPost);
         statusMessageContainer.innerHTML = ``;
       } else if (filteredArray.length === 0) {

@@ -7,37 +7,25 @@ export function displayItemInfo(itemInfo) {
     <h1 class="text-center mt-5">${itemInfo.title}</h1>
   `;
 
-  const formattedDeadlineDate = new Date(itemInfo.endsAt).toLocaleDateString(
-    "en-us",
-    {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-    }
-  );
-  const formattedDeadlineTime = new Date(itemInfo.endsAt).toLocaleTimeString(
-    "en-GB",
-    {
-      hour: "2-digit",
-      minute: "2-digit",
-    }
-  );
+  const formattedDeadlineDate = new Date(itemInfo.endsAt).toLocaleDateString("en-us", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+  const formattedDeadlineTime = new Date(itemInfo.endsAt).toLocaleTimeString("en-GB", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
 
-  const formattedCreatedDate = new Date(itemInfo.created).toLocaleDateString(
-    "en-us",
-    {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-    }
-  );
-  const formattedCreatedTime = new Date(itemInfo.created).toLocaleTimeString(
-    "en-GB",
-    {
-      hour: "2-digit",
-      minute: "2-digit",
-    }
-  );
+  const formattedCreatedDate = new Date(itemInfo.created).toLocaleDateString("en-us", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+  const formattedCreatedTime = new Date(itemInfo.created).toLocaleTimeString("en-GB", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
 
   const itemDetails = document.querySelector("#item-info");
   itemDetails.innerHTML = `

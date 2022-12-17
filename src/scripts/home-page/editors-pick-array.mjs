@@ -2,13 +2,8 @@ export let editorsChoiceArray = [
   {
     id: "70971e67-7894-4171-973c-94d0634740a8",
     title: "Entrance to Nightwish concert",
-    description:
-      "Nightwish is a Finnish symphonic metal band from Kitee. The band was formed in 1996 by lead songwriter and keyboardist Tuomas Holopainen, guitarist Emppu Vuorinen, and former lead singer Tarja Turunen.",
-    media: [
-      "https://i.ytimg.com/vi/fdpo3rpuH_E/maxresdefault.jpg",
-      "https://static.infomusic.ro/media/2015/12/nightwish-concert-bucuresti-2015-4334-800x533.jpg",
-      "http://www.three-songs.com/wp-content/uploads/2015/12/C85O2457-Edit.jpg",
-    ],
+    description: "Nightwish is a Finnish symphonic metal band from Kitee. The band was formed in 1996 by lead songwriter and keyboardist Tuomas Holopainen, guitarist Emppu Vuorinen, and former lead singer Tarja Turunen.",
+    media: ["https://i.ytimg.com/vi/fdpo3rpuH_E/maxresdefault.jpg", "https://static.infomusic.ro/media/2015/12/nightwish-concert-bucuresti-2015-4334-800x533.jpg", "http://www.three-songs.com/wp-content/uploads/2015/12/C85O2457-Edit.jpg"],
     tags: [],
     created: "2022-12-15T17:10:36.654Z",
     updated: "2022-12-15T17:10:36.654Z",
@@ -78,13 +73,8 @@ export let editorsChoiceArray = [
     seller: {
       name: "FloorJansen",
       email: "floor@stud.noroff.no",
-      avatar:
-        "https://planetengine.co.uk/wp-content/uploads/2019/10/floor-jansen.jpg",
-      wins: [
-        "2f4887a9-8156-41ff-a4fe-a2e45433cdc0",
-        "0b8c18d9-09b8-4f16-bffc-0e0888a6b402",
-        "5c3e9d4b-d7ce-4803-9092-1b955f2a650a",
-      ],
+      avatar: "https://planetengine.co.uk/wp-content/uploads/2019/10/floor-jansen.jpg",
+      wins: ["2f4887a9-8156-41ff-a4fe-a2e45433cdc0", "0b8c18d9-09b8-4f16-bffc-0e0888a6b402", "5c3e9d4b-d7ce-4803-9092-1b955f2a650a"],
     },
     _count: {
       bids: 10,
@@ -93,13 +83,8 @@ export let editorsChoiceArray = [
   {
     id: "2f249599-4ee6-47c5-a472-2cc357986879",
     title: "Hans Gude works",
-    description:
-      "I happen wo own a few painitngs of Hans Gude, which I stole from Gothenburg's Gallery. They are worth a fortune and this might be your lucky day. Bid on!",
-    media: [
-      "https://i.pinimg.com/originals/fb/07/bb/fb07bb9a27602dde6dbbc848a0988816.jpg",
-      "https://i.pinimg.com/originals/1a/a2/c2/1aa2c2f9adf3dd5eaeab423a0221e104.jpg",
-      "https://i.pinimg.com/originals/f3/c7/17/f3c71754e7a55cbd1963de41f94a5057.jpg",
-    ],
+    description: "I happen wo own a few painitngs of Hans Gude, which I stole from Gothenburg's Gallery. They are worth a fortune and this might be your lucky day. Bid on!",
+    media: ["https://i.pinimg.com/originals/fb/07/bb/fb07bb9a27602dde6dbbc848a0988816.jpg", "https://i.pinimg.com/originals/1a/a2/c2/1aa2c2f9adf3dd5eaeab423a0221e104.jpg", "https://i.pinimg.com/originals/f3/c7/17/f3c71754e7a55cbd1963de41f94a5057.jpg"],
     tags: [],
     created: "2022-12-07T14:47:48.085Z",
     updated: "2022-12-07T14:47:48.085Z",
@@ -108,14 +93,8 @@ export let editorsChoiceArray = [
     seller: {
       name: "Mozart",
       email: "mozart@stud.noroff.no",
-      avatar:
-        "https://3.bp.blogspot.com/-NFCuu48Zcvk/UVJ2xqeAAUI/AAAAAAAAAbI/RIpLSfE_I-U/s1600/wolfgang-amadeus-mozart.gif",
-      wins: [
-        "97fe9267-f429-484c-95f8-571772324db3",
-        "3d6351d5-b678-43f9-96e1-71cd78a6cfaa",
-        "7cd5b3fd-9050-4b56-86e3-320e79e5b8f6",
-        "2855bc00-40b8-4993-a2e4-b9541b8e73e5",
-      ],
+      avatar: "https://3.bp.blogspot.com/-NFCuu48Zcvk/UVJ2xqeAAUI/AAAAAAAAAbI/RIpLSfE_I-U/s1600/wolfgang-amadeus-mozart.gif",
+      wins: ["97fe9267-f429-484c-95f8-571772324db3", "3d6351d5-b678-43f9-96e1-71cd78a6cfaa", "7cd5b3fd-9050-4b56-86e3-320e79e5b8f6", "2855bc00-40b8-4993-a2e4-b9541b8e73e5"],
     },
     _count: {
       bids: 0,
@@ -124,13 +103,8 @@ export let editorsChoiceArray = [
   {
     id: "dbd19ce1-ea76-47ef-8488-a19e0acff4fb",
     title: "Noroff online course",
-    description:
-      "I'm selling a Noroff online course. Place your bid and good luck!",
-    media: [
-      "https://static.noroff.no/cms/noroff/2021-noroff-mine-sider.jpg",
-      "https://static.noroff.no/cms/nyheter/2019/februar/noroff-studiested-oslo.jpg",
-      "https://static.noroff.no/cms/nyheter/2019/september/noroff-oslo-studednter.jpg",
-    ],
+    description: "I'm selling a Noroff online course. Place your bid and good luck!",
+    media: ["https://static.noroff.no/cms/noroff/2021-noroff-mine-sider.jpg", "https://static.noroff.no/cms/nyheter/2019/februar/noroff-studiested-oslo.jpg", "https://static.noroff.no/cms/nyheter/2019/september/noroff-oslo-studednter.jpg"],
     tags: [],
     created: "2022-12-16T12:16:41.508Z",
     updated: "2022-12-16T12:16:41.508Z",
@@ -164,13 +138,8 @@ export let editorsChoiceArray = [
     seller: {
       name: "MachadoDeAssis",
       email: "machadodeassis@stud.noroff.no",
-      avatar:
-        "https://www.sensivel-mente.com/content/uploads/2020/06/Machado_de_Assis_real_negro-1.jpg",
-      wins: [
-        "9f945179-5bcd-47ef-a2a3-cb9984f8b5ac",
-        "0338a607-a15e-4d08-a834-b9bec8cc6c17",
-        "18e582c9-c851-4c26-abc6-11278cc2b64c",
-      ],
+      avatar: "https://www.sensivel-mente.com/content/uploads/2020/06/Machado_de_Assis_real_negro-1.jpg",
+      wins: ["9f945179-5bcd-47ef-a2a3-cb9984f8b5ac", "0338a607-a15e-4d08-a834-b9bec8cc6c17", "18e582c9-c851-4c26-abc6-11278cc2b64c"],
     },
     _count: {
       bids: 4,

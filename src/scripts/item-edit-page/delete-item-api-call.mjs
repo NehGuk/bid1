@@ -8,8 +8,7 @@ export async function deleteFromAPI(url, method) {
       console.log("There has been an issue. Whatttt????!!!");
       const errorMessage = document.querySelector("#error-message");
       errorMessage.style.display = "block";
-      errorMessage.innerHTML =
-        "There has been an error. Please try again later.";
+      errorMessage.innerHTML = "There has been an error. Please try again later.";
     }
   } catch (error) {
     console.log(error);
