@@ -64,13 +64,13 @@
         <!-- title -->
         <div class="">
           <input type="text" name="title" id="title" class="form-control" placeholder="Item asdasdas das da name" maxlength="300" title="Please add a title to your post" />
-          <label for="title"></label>
+          <label class="was-validated" for="title" style="display: none">Title</label>
         </div>
 
         <!-- description -->
         <div class="">
           <textarea name="description" id="description" class="form-control" placeholder="Item description" maxlength="280" rows="5"></textarea>
-          <label for="description"></label>
+          <label class="was-validated" for="description" style="display: none">Description</label>
         </div>
 
         <!-- ends at -->
@@ -80,11 +80,11 @@
           <div class="row">
             <div class="col">
               <input type="date" name="date" id="date" class="form-control" title="Bid deadline" disabled />
-              <label for="date"></label>
+              <label class="was-validated" for="date" style="display: none">Date</label>
             </div>
             <div class="col">
               <input type="time" name="time" id="time" class="form-control" title="Time" disabled />
-              <label for="time"></label>
+              <label class="was-validated" for="time" style="display: none">Time</label>
             </div>
           </div>
         </div>
@@ -94,17 +94,17 @@
           <hr class="mb-1 text-primary" />
           <p class="text-muted"><strong>Image gallery: please add 3 images</strong></p>
           <input type="url" name="media1" id="media1" class="form-control" placeholder="Image URL 1" maxlength="1000" title="Example: https://upload.wikimedia.org/wikipedia/commons/1/13/Red_Knot_1_-_Boat_Harbour.jpg" required />
-          <label for="media1"></label>
+          <label class="was-validated" for="media1" style="display: none">Media 1</label>
         </div>
 
         <div class="mb-0">
           <input type="url" name="media2" id="media2" class="form-control" placeholder="Image URL 2" maxlength="1000" title="Example: https://upload.wikimedia.org/wikipedia/commons/1/13/Red_Knot_1_-_Boat_Harbour.jpg" required />
-          <label for="media2"></label>
+          <label class="was-validated" for="media2" style="display: none">Media 2</label>
         </div>
 
         <div class="mb-0">
           <input type="url" name="media3" id="media3" class="form-control" placeholder="Image URL 3" maxlength="1000" title="Example: https://upload.wikimedia.org/wikipedia/commons/1/13/Red_Knot_1_-_Boat_Harbour.jpg" required />
-          <label for="media3"></label>
+          <label class="was-validated" for="media3" style="display: none">Media 3</label>
         </div>
 
         <!-- button -->
