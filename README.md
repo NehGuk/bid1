@@ -71,4 +71,4 @@ The Product Owner has requested links to the following:
 
 ## Contributions
 
-For suggestions and contributions, please fork this repository and open new pull requests. The main branch is protected. Also, fel free to post on the [issues](https://github.com/NehGuk/bid7/issues) tab.
+For suggestions and contributions, please fork this repository and open new pull requests. The main branch is protected. You're also welcome to post post on the [issues](https://github.com/NehGuk/bid7/issues) tab.
