@@ -1,8 +1,12 @@
 # BID7 Aution Platform
 
 - IMAGE
+  ![Homepage screenshot](./assets/screenshot-home.jpg)
 
-- Short description: Semester Project 2, Noroff etc
+- Summary
+  Short description: Semester Project 2, Noroff etc
+  Version: 1.2.0
+  ![GitHub repo size](https://img.shields.io/github/repo-size/NehGuk/social-media-client-hk?style=plastic)
 
 ## Built with
 
@@ -24,9 +28,6 @@
 </div>
 
 ## Details
-
-- Version: 1.2.0
-- ![GitHub repo size](https://img.shields.io/github/repo-size/NehGuk/social-media-client-hk?style=plastic)
 
 ## User stories
 
