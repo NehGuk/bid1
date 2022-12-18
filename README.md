@@ -1,12 +1,17 @@
 # BID7 Aution Platform
 
-- IMAGE
-  ![Homepage screenshot](./assets/screenshot-home.jpg)
+![Homepage screenshot](./assets/screenshot-home.jpg)
 
-- Summary
-  Short description: Semester Project 2, Noroff etc
-  Version: 1.2.0
-  ![GitHub repo size](https://img.shields.io/github/repo-size/NehGuk/social-media-client-hk?style=plastic)
+## Semester Project 2
+
+Norwegian School of Technology and Digital Media, Noroff
+
+## Summary
+
+An auction site is looking to launch a website where users can add items to be bid on and bid on items other users have put up for auction. When a new user joins the website, they are given 1000 credits to use on the site. They can get credits by selling items and use credit by buying items. Non-registered users can search through the listings, but only registered users can make bids on listings.
+
+- Version: 1.2.0
+- ![GitHub repo size](https://img.shields.io/github/repo-size/NehGuk/social-media-client-hk?style=plastic)
 
 ## Built with
 
