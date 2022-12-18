@@ -52,8 +52,8 @@ An auction site is looking to launch a website where users can add items to be b
 The Product Owner has requested links to the following:
 
 - [A Gantt chart for project timing](https://www.jottacloud.com/s/13959e5672009894be2ae09ef04fafa0c9c)
-- A design prototype
-- A style guide
+- [A design prototype](https://xd.adobe.com/view/a854c04d-8c68-4a5b-ba86-431f1484a0b8-fd07/)
+- [A style guide](https://xd.adobe.com/view/771b79f7-18c4-4deb-8a95-7518f18db6dc-2248/)
 - [A kanban project board](https://trello.com/b/iXKIkHhy/bid7-dev)
 - [A repository link](https://github.com/NehGuk/bid7)
 - [A hosted application demo link](https://magenta-llama-b35046.netlify.app/index.html#)
