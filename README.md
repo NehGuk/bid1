@@ -33,8 +33,6 @@ An auction site is looking to launch a website where users can add items to be b
   <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vscode/vscode-original-wordmark.svg" title="Wordpress" **alt="Wordpress" width="40" height="40"/>
 </div>
 
-## Details
-
 ## User stories
 
 - [x] The client has specified the following requirements in the form of User Stories:
@@ -70,3 +68,7 @@ The Product Owner has requested links to the following:
 
 - Bootstrap 5.2.2
 - SASS 1.56.1
+
+## Contributions
+
+For suggestions and contributions, please fork this repository and open new pull requests. The main branch is protected. Also, fel free to post on the [issues](https://github.com/NehGuk/bid7/issues) tab.
