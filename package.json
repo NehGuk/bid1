@@ -1,7 +1,7 @@
 {
   "name": "Bid1 Auction Platform",
   "version": "1.2.0",
-  "description": "BID1 Auction | Semester Project 2 | Noroff",
+  "description": "BID1 Auction Platform | Semester Project 2 | Noroff",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
