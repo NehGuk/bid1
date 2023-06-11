@@ -1,4 +1,4 @@
-# BID7 Aution Platform
+# BID7 Auction Platform
 
 ![Homepage screenshot](./assets/screenshot-home.jpg)
 
